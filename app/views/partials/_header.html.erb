@@ -40,7 +40,7 @@
 	<!-- Logo -->
 	<div class="four columns">
 		<div id="logo">
-			<h1><a href="index.html"><img src="assets/logo.png" alt="Trizzy" /></a></h1>
+			<h1><%= link_to  do %><%=image_tag 'logo.png'%><%end %></h1>
 		</div>
 	</div>
 
@@ -78,15 +78,19 @@
 
 					<ul id="cart-items-list">
 						<li>
-							<a href="#"><img src="assets/small_product_list_08.jpg" alt="" /></a>
-							<a href="#">Converse All Star Trainers</a>
+							<%= link_to do %>
+								<%=image_tag 'small_product_list_08.jpg'%>
+							<% end %>
+							<%= link_to 'Converse All Star Trainers'%>
 							<span>1 x $79.00</span>
 							<div class="clearfix"></div>
 						</li>
 
 						<li>
-							<a href="#"><img src="assets/small_product_list_09.jpg" alt="" /></a>
-							<a href="#">Tommy Hilfiger <br /> Shirt Beat</a>
+							<%= link_to do %>
+								<%=image_tag 'small_product_list_09.jpg'%>
+							<% end %>
+							<%= link_to 'Tommy Hilfiger <br /> Shirt Beat'.html_safe %>
 							<span>1 x $99.00</span>
 							<div class="clearfix"></div>
 						</li>

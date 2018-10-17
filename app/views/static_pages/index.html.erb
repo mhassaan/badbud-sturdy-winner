@@ -10,7 +10,7 @@
 			<ul>
 				<!-- Slide 1  -->
 				<li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
-					<img src="assets/slider.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+					<%= image_tag 'slider.jpg', data:{bgfit: 'cover', bgposition: 'left top', bgrepeat: 'no-repeat'} %>
  					<div class="caption sfb fadeout" data-x="145" data-y="170" data-speed="400" data-start="800"  data-easing="Power4.easeOut">
 						<h2>Dress Sharp</h2>
 						<h3>Learn from the classics</h3>
@@ -20,7 +20,7 @@
 
 				<!-- Slide 2  -->
 				<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000">
- 					<img src="assets/slider2.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+					<%= image_tag 'slider2.jpg', data:{bgfit: 'cover', bgposition: 'left top', bgrepeat: 'no-repeat'} %>
  					<div class="caption dark sfb fadeout" data-x="750" data-y="170" data-speed="400" data-start="800"  data-easing="Power4.easeOut">
 						<h2>Urban Style</h2>
 						<h3>Every cut and colour</h3>
@@ -30,7 +30,7 @@
 
 				<!-- Slide 3  -->
 				<li data-transition="fadetotopfadefrombottom" data-slotamount="7" data-masterspeed="1000">
- 					<img src="assets/slider3.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+					<%= image_tag 'slider3.jpg', data:{bgfit: 'cover', bgposition: 'left top', bgrepeat: 'no-repeat'} %> 
  					<div class="caption dark sfb fadeout" data-x="850" data-y="170" data-speed="400" data-start="800"  data-easing="Power4.easeOut">
 						<h2>New In</h2>
 						<h3>Pants and T-Shirts</h3>
@@ -51,7 +51,7 @@
 	<div class="one-third column">
 		<a href="#" class="img-caption" >
 			<figure>
-				<img src="assets/featured_img_1.jpg" alt="" />
+				<%= image_tag 'featured_img_1.jpg' %> 
 				<figcaption>
 					<h3>Men's Shirts</h3>
 					<span>25% Off Summer Styles</span>
@@ -63,7 +63,7 @@
 	<div class="one-third column">
 		<a href="#" class="img-caption" >
 			<figure>
-				<img src="assets/featured_img_2.jpg" alt="" />
+				<%= image_tag 'featured_img_2.jpg' %> 
 				<figcaption>
 					<h3>Running Shoes</h3>
 					<span>Sports Discount</span>
@@ -75,7 +75,7 @@
 	<div class="one-third column">
 		<a href="#" class="img-caption" >
 			<figure>
-				<img src="assets/featured_img_3.jpg" alt="" />
+				<%= image_tag 'featured_img_3.jpg' %> 
 				<figcaption>
 					<h3>Winter Jackets</h3>
 					<span>End-of Season Sales</span>
@@ -158,7 +158,7 @@
 <!-- Parallax Banner
 ================================================== -->
 <div class="parallax-banner fullwidth-element"  data-background="#000" data-opacity="0.45" data-height="200">
-	<img src="assets/parallax.jpg" alt="" />
+	<%= image_tag 'parallax.jpg' %>
 	<div class="parallax-overlay"></div>
 	<div class="parallax-title">End of season sale <span>Up to 35% off Women’s Denim</span></div>
 </div>
@@ -180,17 +180,17 @@
 		<ul class="product-list">
 
 			<li><a href="#">
-				<img src="assets/small_product_list_01.jpg" alt="" />
+				<%= image_tag 'small_product_list_01.jpg' %>
 				<div class="product-list-desc">Canvas Backpack <i>$59.00</i></div>
 			</a></li>
 
 			<li><a href="#">
-				<img src="assets/small_product_list_02.jpg" alt="" />
+				<%= image_tag 'small_product_list_02.jpg' %>
 				<div class="product-list-desc">Long Sleeve Shirt <i>$29.00</i></div>
 			</a></li>
 
 			<li><a href="#">
-				<img src="assets/small_product_list_03.jpg" alt="" />
+				<%= image_tag 'small_product_list_03.jpg' %>
 				<div class="product-list-desc">Tommy Hilfiger Shirt Beat <i>$89.00</i></div>
 			</a></li>
 
@@ -213,7 +213,7 @@
 		<ul class="product-list top-rated">
 
 			<li><a href="#">
-				<img src="assets/small_product_list_04.jpg" alt="" />
+				<%= image_tag 'small_product_list_04.jpg' %>
 				<div class="product-list-desc with-rating">Brogue Boots in Leather <i>$99.00</i>
 					<div class="rating five-stars">
 						<div class="star-rating"></div>
@@ -223,7 +223,7 @@
 			</a></li>
 
 			<li><a href="#">
-				<img src="assets/small_product_list_05.jpg" alt="" />
+				<%= image_tag 'small_product_list_05.jpg' %>
 				<div class="product-list-desc with-rating">Slim Jeans With Blue Tint <i>$79.00</i>
 					<div class="rating four-stars">
 						<div class="star-rating"></div>
@@ -233,7 +233,7 @@
 			</a></li>
 
 			<li><a href="#">
-				<img src="assets/small_product_list_06.jpg" alt="" />
+				<%= image_tag 'small_product_list_06.jpg' %>
 				<div class="product-list-desc with-rating">New Look Fairisle Scarf <i>$19.00</i>
 					<div class="rating three-stars">
 						<div class="star-rating"></div>
@@ -261,17 +261,17 @@
 		<ul class="product-list discount">
 
 			<li><a href="#">
-				<img src="assets/small_product_list_07.jpg" alt="" />
+				<%= image_tag 'small_product_list_07.jpg' %>
 				<div class="product-list-desc">Short Sleeve Polo Shirt <i>$29.00<b>$19.00</b></i></div>
 			</a></li>
 
 			<li><a href="#">
-				<img src="assets/small_product_list_08.jpg" alt="" />
+				<%= image_tag 'small_product_list_08.jpg' %>
 				<div class="product-list-desc">Long Sleeve Shirt <i>$99.00<b>$79.00</b></i></div>
 			</a></li>
 
 			<li><a href="#">
-				<img src="assets/small_product_list_09.jpg" alt="" />
+				<%= image_tag 'small_product_list_09.jpg' %>
 				<div class="product-list-desc">Tommy Hilfiger Shirt Beat <i>$499.00<b>$399.00</b></i></div>
 			</a></li>
 
@@ -300,7 +300,7 @@
 		<article class="from-the-blog">
 
 			<figure class="from-the-blog-image">
-				<a href="blog-single-post.html"><img src="assets/from_the_blog_01.jpg" alt="" /></a>
+				<a href="blog-single-post.html"><%= image_tag 'from_the_blog_01.jpg' %></a>
 				<div class="hover-icon"></div>
 			</figure>
 
@@ -319,7 +319,7 @@
 		<article class="from-the-blog">
 
 			<figure class="from-the-blog-image">
-				<a href="blog-single-post.html"><img src="assets/from_the_blog_02.jpg" alt="" /></a>
+				<a href="blog-single-post.html"><%= image_tag 'from_the_blog_02.jpg' %></a>
 				<div class="hover-icon"></div>
 			</figure>
 
@@ -338,7 +338,7 @@
 		<article class="from-the-blog">
 
 			<figure class="from-the-blog-image">
-				<a href="blog-single-post.html"><img src="assets/from_the_blog_03.jpg" alt="" /></a>
+				<a href="blog-single-post.html"><%= image_tag 'from_the_blog_03.jpg' %></a>
 				<div class="hover-icon"></div>
 			</figure>
 
@@ -357,7 +357,7 @@
 		<article class="from-the-blog">
 
 			<figure class="from-the-blog-image">
-				<a href="blog-single-post.html"><img src="assets/from_the_blog_04.jpg" alt="" /></a>
+				<a href="blog-single-post.html"><%= image_tag 'from_the_blog_04.jpg' %></a>
 				<div class="hover-icon"></div>
 			</figure>
 
