@@ -1,0 +1,14 @@
+<% flash.each do|key,msg| %>
+  <%case key%>
+  <%when "error"%>  
+    <div class="notification error closeable">
+      <p><span>Error!</span> <%= msg.html_safe %></p>
+      <a class="close" href="#"></a>
+    </div>
+  <%when "success"%>  
+    <div class="notification success closeable">
+      <p><span>Welcome!</span> <%= msg.html_safe %></p>
+      <a class="close" href="#"></a>
+    </div>
+  <%end%>
+<%end%>

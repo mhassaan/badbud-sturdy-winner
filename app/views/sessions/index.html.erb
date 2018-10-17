@@ -1,0 +1,249 @@
+<div id="wrapper">
+
+
+<%= render partial: 'partials/header' %>
+
+<!-- Navigation
+================================================== -->
+<div class="container">
+	<div class="sixteen columns">
+
+		<a href="#menu" class="menu-trigger"><i class="fa fa-bars"></i> Menu</a>
+
+		<nav id="navigation">
+			<ul class="menu" id="responsive">
+			  
+				<li><a href="index.html" class="homepage">Home</a></li>
+				
+
+				<li class="dropdown">
+					<a href="#">Shop</a>
+					<ul>
+						<li><a href="shop-with-sidebar.html">Shop With Sidebar</a></li>
+						<li><a href="shop-full-width.html">Shop Full Width</a></li>
+						<li><a href="checkout-billing-details.html">Checkout Pages</a></li>
+						<li><a href="shop-categories-grid.html">Categories Grid</a></li>
+						<li><a href="single-product-page.html">Single Product Page</a></li>
+						<li><a href="variable-product-page.html">Variable Product Page</a></li>
+						<li><a href="wishlist.html">Wishlist Page</a></li>
+						<li><a href="shopping-cart.html">Shopping Cart</a></li>
+					</ul>
+				</li>
+
+
+				<li>
+					<a href="#">Features</a>
+					<div class="mega">
+						<div class="mega-container">
+
+							<div class="one-column">
+								<ul>
+									<li><span class="mega-headline">Example Pages</span></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="faq.html">FAQ</a></li>
+									<li><a href="404-page.html">404 Page</a></li>
+								</ul>
+							</div>
+
+							<div class="one-column">
+								<ul>
+									<li><span class="mega-headline">Featured Pages</span></li>
+									<li><a href="index-2.html">Business Homepage</a></li>
+									<li><a href="shop-with-sidebar.html">Default Shop</a></li>
+									<li><a href="blog-masonry.html">Masonry Blog</a></li>
+									<li><a href="variable-product-page.html">Variable Product</a></li>
+									<li><a href="portfolio-dynamic-grid.html">Dynamic Grid</a></li>
+								</ul>
+							</div>
+
+							<div class="one-column hidden-on-mobile">
+								<ul>
+									<li><span class="mega-headline">Paragraph</span></li>
+									<li><p>This <a href="#">Mega Menu</a> can handle everything. Lists, paragraphs, forms...</p></li>
+								</ul>
+							</div>
+
+							<div class="one-fourth-column hidden-on-mobile">
+								<a href="#" class="img-caption margin-reset">
+									<figure>
+										<img src="assets/menu-banner-01.jpg" alt="" />
+										<figcaption>
+											<h3>Jeans</h3>
+											<span>Pack for Style</span>
+										</figcaption>
+									</figure>
+								</a>
+							</div>
+
+							<div class="one-fourth-column hidden-on-mobile">
+								<a href="#" class="img-caption margin-reset">
+									<figure>
+										<img src="assets/menu-banner-02.jpg" alt="" />
+										<figcaption>
+											<h3>Sunglasses</h3>
+											<span>Nail the Basics</span>
+										</figcaption>
+									</figure>
+								</a>
+							</div>
+
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</li>
+
+
+				<li class="dropdown">
+					<a href="#">Shortcodes</a>
+					<ul>
+						<li><a href="elements.html">Elements</a></li>
+						<li><a href="typography.html">Typography</a></li>
+						<li><a href="pricing-tables.html">Pricing Tables</a></li>
+						<li><a href="icons.html">Icons</a></li>
+					</ul>
+				</li>
+
+
+				<li class="dropdown">
+					<a href="#">Portfolio</a>
+					<ul>
+						<li><a href="portfolio-3-columns.html">3 Columns</a></li>
+						<li><a href="portfolio-4-columns.html">4 Columns</a></li>
+						<li><a href="portfolio-dynamic-grid.html">Dynamic Grid</a></li>
+						<li><a href="single-project.html">Single Project</a></li>
+					</ul>
+				</li>
+				
+
+				<li class="dropdown">
+					<a href="#">Blog</a>
+					<ul>
+						<li><a href="blog-standard.html">Blog Standard</a></li>
+						<li><a href="blog-masonry.html">Blog Masonry</a></li>
+						<li><a href="blog-single-post.html">Single Post</a></li>
+					</ul>
+				</li>
+
+
+				<li class="demo-button">
+				  <a href="#">Get This Theme</a>
+				</li> 
+
+			</ul>
+		</nav>
+	</div>
+</div>
+
+
+<!-- Titlebar
+================================================== -->
+<section class="titlebar">
+<div class="container">
+	<div class="sixteen columns">
+		<h2>My Account</h2>
+		
+		<nav id="breadcrumbs">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li>My Account</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+</section>
+
+
+<!-- Content
+================================================== -->
+
+<!-- Container -->
+<div class="container">
+
+	<div class="six columns centered">
+
+		<ul class="tabs-nav my-account">
+			<li class=""><a href="#tab1">Login</a></li>
+			<li><a href="#tab2">Register</a></li>
+		</ul>
+
+		<div class="tabs-container">
+			<!-- Login -->
+			<div class="tab-content" id="tab1" style="display: none;">
+
+				<h3 class="headline">Login</h3><span class="line" style="margin-bottom:20px;"></span><div class="clearfix"></div>
+
+        <%= form_for @login_user, url: login_user_path, method:'post', html:{class:'login', id:'login_user'} do |f| %>
+          <p class="form-row form-row-wide">
+            <label for="reg_email">Email Address: <span class="required">*</span></label>
+            <%= f.email_field :email, class:'input-text' %>
+          </p>
+
+          <p class="form-row form-row-wide">
+            <label for="reg_password">Password: <span class="required">*</span></label>
+              <%= f.password_field :password, class:'input-text' %>
+          </p>
+
+          <p class="form-row">
+            <%= f.submit 'LOGIN', class:'button' %>
+						<label for="rememberme" class="rememberme">
+						<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label>
+					</p>
+
+					<p class="lost_password">
+						<a href="#" >Lost Your Password?</a>
+					</p>
+
+        <%end%>
+			</div>
+
+				<!-- Register -->
+				<div class="tab-content" id="tab2" style="display: none;">
+
+					<h3 class="headline">Register</h3><span class="line" style="margin-bottom:20px;"></span><div class="clearfix"></div>
+
+          <%= form_for @register_user, url: register_user_path, method:'post', html:{class:'register', id:'signup_user'} do |f| %>
+            <p class="form-row form-row-wide">
+              <label for="first_name">First Name: <span class="required">*</span></label>
+              <%= f.text_field :first_name, class:'input-text' %>
+            </p>
+
+            <p class="form-row form-row-wide">
+              <label for="last_name">Last Name: <span class="required">*</span></label>
+              <%= f.text_field :last_name, class:'input-text' %>
+            </p>
+
+            <p class="form-row form-row-wide">
+              <label for="reg_email">Email Address: <span class="required">*</span></label>
+              <%= f.email_field :email, class:'input-text',id:'signup_email' %>
+            </p>
+
+            <p class="form-row form-row-wide">
+							<label for="reg_password">Password: <span class="required">*</span></label>
+               <%= f.password_field :password, class:'input-text',id:'signup_password'%>
+						</p>
+
+						<p class="form-row form-row-wide">
+							<label for="reg_password2">Repeat Password: <span class="required">*</span></label>
+							<%= f.password_field :password_confirmation, class:'input-text' %>
+						</p>
+
+						<p class="form-row">
+              <%= f.submit 'REGISTER', class:'button' %>
+						</p>
+
+          <%end%>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div class="margin-top-50"></div>
+
+
+<!-- Footer
+================================================== -->
+<%= render partial: 'partials/footer' %>
+
+</div>

@@ -1,0 +1,8 @@
+<tbody>
+  <tr>
+    <td><%= product_row.id %></td>
+    <td><%= product_row.name %></td>
+    <td><%= product_row.strain_type %></td>
+    <td><%= image_tag url_for(product_row.photo.variant(thumbnail: "500x50").processed)if product_row.photo.attached?%></td>
+  </tr>
+</tbody>
