@@ -669,15 +669,15 @@
 		// Retina Images
 		//----------------------------------------//
 
-		var pixelRatio = !!window.devicePixelRatio ? window.devicePixelRatio : 1;
+		// var pixelRatio = !!window.devicePixelRatio ? window.devicePixelRatio : 1;
 
-		$(window).on("load", function() {
-			if (pixelRatio > 1) {
-				$('#logo img').each(function() {
-					$(this).attr('src', $(this).attr('src').replace(".","@2x."));
-				});
-			}
-		});
+		// $(window).on("load", function() {
+		// 	if (pixelRatio > 1) {
+		// 		$('#logo img').each(function() {
+		// 			$(this).attr('src', $(this).attr('src').replace(".","@2x."));
+		// 		});
+		// 	}
+		// });
 
 
 
